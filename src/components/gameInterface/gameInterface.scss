@@ -1,0 +1,54 @@
+.game-interface {
+    padding: 50px 30px 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.game-interface__title {
+    margin: 0;
+    padding: 0;
+}
+
+.game-interface__image {
+    width: 50vh;
+    border-radius: 20px;
+}
+
+.game-interface__buttons-wrapper {
+    display: grid;
+    grid-template-columns: 260px 35px;
+    gap: 8px;
+    row-gap: 5px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.game-interface__add-button {
+    width: max-content;
+    background: linear-gradient(80deg, rgb(131, 233, 29), rgb(37, 158, 71));
+    border: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.game-interface__context-menu-button {
+    width: max-content;
+    background: linear-gradient(80deg, rgb(131, 233, 29), rgb(37, 158, 71));
+    border: none;
+    color: inherit;
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

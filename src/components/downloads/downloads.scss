@@ -1,0 +1,21 @@
+.downloads {
+    position: relative;
+
+    a {
+        color: #fff;
+    }
+    
+}
+
+.downloads__counter {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(207, 71, 71);
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+}

@@ -1,0 +1,23 @@
+.context-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    padding: 10px;
+    color: #000000;
+    grid-column: 1 / 3;
+    margin-right: -3px;
+}
+
+.context-menu-list--hidden {
+    display: none;
+}
+
+.context-menu-item {
+    padding: 5px;
+    border-bottom: 1px solid #e5e5e5;
+
+    &:last-child {
+        border: none;
+    }
+}

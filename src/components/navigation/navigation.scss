@@ -1,0 +1,13 @@
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    display: flex;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
