@@ -7,14 +7,17 @@ export default function Downloads() {
 
     return (
         <div className="downloads">
-            <a
-                href={downloadsState.length === 0 ? '#' :
-                    'data:text/json; charset=utf-8,' + encodeURIComponent(JSON.stringify(downloadsState))
+            <button
+                className='downloads__list-button'
+                onClick={() => {
+                    document.querySelector('.downloads-popup-wrapper').setAttribute('style', 'display: flex;')
+                }}
+                disabled={
+                    downloadsState.length === 0 ? true : false
                 }
-                download='games.json'
             >
                 <CloudDownloadIcon />
-            </a>
+            </button>
             {downloadsState.length === 0 ? '' : <div className='downloads__counter'>{downloadsState.length}</div>}
         </div>
     )

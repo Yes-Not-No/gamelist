@@ -19,4 +19,11 @@ function addGameToDownload(game) {
     }
 }
 
-export { setGameList, setChoosenGame, addGameToDownload }
+function removeFromDownload(game) {
+    return {
+        type: 'removeFromDownload',
+        payload: game,
+    }
+}
+
+export { setGameList, setChoosenGame, addGameToDownload, removeFromDownload }

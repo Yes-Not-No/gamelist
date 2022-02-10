@@ -10,13 +10,14 @@ import Home from './pages/Home/home';
 import { fetchData } from './data/fetchData';
 import { useDispatch } from 'react-redux';
 import { setGameList } from './redux/actions';
+import DownloadsPopUp from './components/downloadsPopUp/downloadsPopUp';
 
 function App() {
 
   const dispatch = useDispatch()
 
-  fetchData().
-    then((data) => {
+  fetchData()
+    .then((data) => {
       dispatch(setGameList(data.data))
     })
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/library' element={<Library />} />
       </Routes>
+      <DownloadsPopUp />
     </React.Fragment>
   );
 }
